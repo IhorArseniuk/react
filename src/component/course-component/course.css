@@ -1,0 +1,13 @@
+div{
+    display:flex;
+    flex-direction: column;
+    background-color:powderblue;
+    width:400px;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color:maroon;
+    font-style: oblique;
+}
