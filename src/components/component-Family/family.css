@@ -1,0 +1,8 @@
+div{
+    display:flex;
+    flex-flow: row wrap;
+    gap:10px;
+    background-color: maroon;
+    justify-content: center;
+    align-items:center;
+}

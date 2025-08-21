@@ -1,11 +1,11 @@
-export type SimsonType={
+export type SimpsonType={
     name: string;
     surname: string;
     age: number;
     info: string;
     photo: string;
 }
-export const simpsons:SimsonType[] = [
+export const simpsons:SimpsonType[] = [
     {
         name: 'Bart',
         surname: 'Simpson',

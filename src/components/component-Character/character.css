@@ -1,0 +1,15 @@
+.simpson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:5px slateblue dot-dash;
+    gap:20px;
+    background-color: mediumaquamarine;
+    padding:20px;
+}
+.simpson img{
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+}
