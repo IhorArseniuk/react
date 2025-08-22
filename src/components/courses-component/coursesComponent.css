@@ -1,0 +1,7 @@
+.coursesDiv{
+    padding:10px;
+    background-color: green;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 50px;
+}
