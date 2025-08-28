@@ -3,10 +3,10 @@ import type {FC} from "react";
 
 type TodoUserType={
     user: UserType,
-    userInfo : (user:UserType)=>void
+    userInfo ?: (user:UserType)=>void
 }
 export const TodoComponent:FC<TodoUserType> = ({user,userInfo}) => {
     return (
-        <div onClick={()=>userInfo(user)}>{user.title}</div>
+        <div id={'user'} onClick={()=> userInfo ? userInfo(user) :undefined}>{user.title}</div>
     )
 };

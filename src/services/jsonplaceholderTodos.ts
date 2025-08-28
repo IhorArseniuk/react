@@ -1,4 +1,4 @@
-import type {UserType} from "../models/userType.ts";
+import type {UserType} from "../../models/userType.ts";
 
 
 const todosUrl= import.meta.env.VITE_APP_JSPTODO;

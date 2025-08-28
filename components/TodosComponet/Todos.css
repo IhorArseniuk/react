@@ -1,0 +1,4 @@
+.users-holder{
+    display: flex;
+    flex-direction: row;
+}

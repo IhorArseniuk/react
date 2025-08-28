@@ -1,9 +1,9 @@
 import './App.css'
-import {TodoComponents} from "../components/TodoComponets/TodoComponents.tsx";
+import {TodosComponent} from "../components/TodosComponet/TodosComponent.tsx";
 function App() {
     return (
     <>
-         <TodoComponents/>
+         <TodosComponent/>
     </>
   )
 }
