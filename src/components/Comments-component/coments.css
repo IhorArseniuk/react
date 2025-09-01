@@ -1,0 +1,8 @@
+.components-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    justify-items: center;
+    align-items: center;
+    padding:50px;
+}

@@ -1,0 +1,24 @@
+.comment{
+    width: 450px;
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    background-color: aquamarine;
+}
+.id{
+    color:red;
+}
+.name{
+    color:yellow;
+    font-style: revert;
+}
+.email{
+    color:green;
+    border-bottom-color: khaki;
+}
+.text{
+    color:navy;
+    background-color:lightpink;
+}
