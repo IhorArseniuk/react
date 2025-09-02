@@ -5,19 +5,13 @@ export type Dimensions = {
 }
 
 export type Reviews = {
-  rating: number;
   comment: string;
   date: string;
   reviewerName: string;
   reviewerEmail: string;
 }
 
-export type Meta = {
-  createdAt: string;
-  updatedAt: string;
-  barcode: string;
-  qrCode: string;
-}
+
 
 export type  ProductModel = {
   id: number;
@@ -36,10 +30,16 @@ export type  ProductModel = {
   warrantyInformation: string;
   shippingInformation: string;
   availabilityStatus: string;
-  reviews: Reviews[];
+  reviews: string[];
   returnPolicy: string;
   minimumOrderQuantity: number;
-  meta: Meta;
+  meta: string[];
   images: string[];
   thumbnail: string;
+}
+export type ProductDummyType={
+    products:ProductModel[];
+    total:number,
+    skip:number,
+    limit:number,
 }
