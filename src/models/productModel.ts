@@ -30,7 +30,7 @@ export type  ProductModel = {
   warrantyInformation: string;
   shippingInformation: string;
   availabilityStatus: string;
-  reviews: string[];
+  reviews: Reviews[];
   returnPolicy: string;
   minimumOrderQuantity: number;
   meta: string[];
