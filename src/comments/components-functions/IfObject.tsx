@@ -14,7 +14,7 @@ function IfObject({product}:ProductProps){
 
             return (
 
-                <ul key={index}>
+                <ul key={index}>{key}
                     {value.map((item, i) => {
                         if (typeof item === "object" && item !== null) {
                             return Object.entries(item).map(([itemKey, itemValue], j) => (
@@ -32,7 +32,7 @@ function IfObject({product}:ProductProps){
         if(typeof value==='object'){
 
             return (
-                <ul key={index}>
+                <ul key={index}>{key}
                 {Object.entries(value).map(([item,value], index)=>(
                     <li key={index}>{item}:{String(value)}</li>
                 ))}
