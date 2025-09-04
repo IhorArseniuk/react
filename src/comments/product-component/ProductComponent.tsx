@@ -1,7 +1,7 @@
 import type {ProductModel} from "../../models/productModel.ts";
 import type {FC} from "react";
-import IfObject from "./IfObject.tsx";
-
+import IfObject from "../components-functions/IfObject.tsx";
+import './css/product.css'
   type ProductProps={
       product:ProductModel
   }

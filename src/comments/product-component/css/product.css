@@ -1,0 +1,13 @@
+.product{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+    width:500px;
+    background-color: khaki;
+    border-radius:20px;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.75);
+    padding:20px;
+    border:4px  deeppink dotted;
+
+}

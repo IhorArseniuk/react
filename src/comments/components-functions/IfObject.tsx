@@ -6,8 +6,14 @@ function IfObject({product}:ProductProps){
     return(
         <>
             {  Object.entries(product).map(([key,value],index) => {
-        if(Array.isArray(value)){
+
+
+                if(key==='images')return null
+
+                if(  Array.isArray(value) ){
+
             return (
+
                 <ul key={index}>
                     {value.map((item, i) => {
                         if (typeof item === "object" && item !== null) {
@@ -22,7 +28,9 @@ function IfObject({product}:ProductProps){
                 </ul>
             );
         }
+
         if(typeof value==='object'){
+
             return (
                 <ul key={index}>
                 {Object.entries(value).map(([item,value], index)=>(
@@ -30,14 +38,18 @@ function IfObject({product}:ProductProps){
                 ))}
             </ul>)
         }
+
         if(key==='thumbnail'){
           return (
               <img src={String(value)} key={index}/>
           )
         }
+
         return(
              <p key={index}>{key}:{String(value)}</p>
+
         )
+
     })}
 </>)}
 export default IfObject
