@@ -1,0 +1,1 @@
+export const baseJsonPlaceUrl=import.meta.env.VITE_API_JSONPLACEHILDER
