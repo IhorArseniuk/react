@@ -1,9 +1,12 @@
 import {useEffect, useState} from "react";
 import {functionFetchApi} from "./FunctionFetchApi.tsx";
 import {FunctionItemMaper} from "./FunctionItemMaper.tsx";
+type FuncProps={
+    fetchUrl:string,
+    dataArrName?:string,
+}
 
-
-export const FunctionDataMaper = (fetchUrl:string,dataArrName?:string) => {
+export const FunctionDataMaper = ({fetchUrl,dataArrName}:FuncProps) => {
 
     const [array,setItems]=useState([])
 
@@ -19,7 +22,7 @@ export const FunctionDataMaper = (fetchUrl:string,dataArrName?:string) => {
          setItems(response)
      }})
 
-   })
+   },[])
 
     return (
         <div>
