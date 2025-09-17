@@ -7,6 +7,8 @@ import {PostsPage} from "../pages/Posts/PostsPage.tsx";
 import {PostsJsonPlaceHolderPage} from "../pages/Posts/PostsJsonPlaceHolderPage.tsx";
 import {PostsDummyJsonPage} from "../pages/Posts/PostsDummyJsonPage.tsx";
 import {CommentsPage} from "../pages/Comments/CommentsPage.tsx";
+import {CommentsJsonPlaceHolderPage} from "../pages/Comments/CommentsJsonPlaceHolderPage.tsx";
+import {CommentsDummyJsonPage} from "../pages/Comments/CommentsDummyJsonPage.tsx";
 
 export const routers=createBrowserRouter([
     {path:'/',element:<App/>,children:[
@@ -22,8 +24,8 @@ export const routers=createBrowserRouter([
                 ]},
 
             {path:'comments',element:<CommentsPage/>,children:[
-                    {path:'jsonplaceholder',element:<PostsJsonPlaceHolderPage/>},
-                    {path:'dummyjson',element:<PostsDummyJsonPage/>}
+                    {path:'jsonplaceholder',element:<CommentsJsonPlaceHolderPage/>},
+                    {path:'dummyjson',element:<CommentsDummyJsonPage/>}
                 ]}
 
 
