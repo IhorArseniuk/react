@@ -1,12 +1,9 @@
-
-
 import './App.css'
-
+import {MenuComponent} from "./components/MenuComponent.tsx";
 function App() {
-
-  return (
+    return (
     <>
-
+         <MenuComponent/>
     </>
   )
 }
