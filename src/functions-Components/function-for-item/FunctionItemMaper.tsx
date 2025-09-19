@@ -60,7 +60,7 @@ export const FunctionItemMaper:FC<FunctionItemProps> = ({item}) => {
             if(Array.isArray(value) && value !== null){
 
                     return (
-                        <ul key={index}>{value}
+                        <ul key={index}>{key}
                             {  value.map(([key, values],index)=>(
                             <li  key={index}>{key}-{String(values)}</li>))}
                         </ul>

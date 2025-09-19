@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {functionFetchApi} from "../FunctionFetchApi.tsx";
-import {FunctionItemMaper} from "../function-for-tem/FunctionItemMaper.tsx";
+import {FunctionItemMaper} from "../function-for-item/FunctionItemMaper.tsx";
 import type {UserDummyType} from "../../models/usersType/userDummyType.ts";
 import type {UserJsonHolType} from "../../models/usersType/userJsonHolType.ts";
 import type {PostDummyType} from "../../models/postsType/postDummyType.ts";
