@@ -19,7 +19,7 @@ export const UsersComponent :FC<UsersProps> = ({url,dataArrayName}) => {
                   }})
     },[])
     return (
-        <div>{
+        <div className='flex flex-col gap-10'>{
             users.map((user) => (<UserComponent user={user}/>))
         }</div>
     );

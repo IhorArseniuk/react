@@ -18,7 +18,7 @@ export const UserCartComponent = () => {
             { cart && Object.entries(cart).map(([key,value],index)=>{
                 if(Array.isArray(value)){
                     return(
-                        <ul key={index}>{key}
+                        <ul className='border-2  border-amber-300 bg-cyan-600 flex flex-col gap-3' key={index}>{key}
                             {value.map((value,index)=>{
 
                                  if(typeof value ==='object' && value !== null){
@@ -28,7 +28,7 @@ export const UserCartComponent = () => {
 
                                                 if(Array.isArray(value) && value!==null){
                                                     return(
-                                                        <ul key={index}>{key}
+                                                        <ul className='border-4  border-purple-800 bg-lime-400 flex flex-col gap-4'key={index}>{key}
                                                             {value.map((value,index)=>{
                                                                 if(typeof value ==='object' && value !== null){
                                                                     return(
