@@ -6,7 +6,7 @@ import {UserCartPage} from "../pages/UserCartPage.tsx";
 export const routes = createBrowserRouter([
     {path:'/',element:<MainLayout/>, children:[
 
-            {path:'users',element:<UsersPage/>},
+            {index:true,element:<UsersPage/>},
 
             {path:'users/:userId/carts',element:<UserCartPage/>},
         ]}
