@@ -13,7 +13,7 @@ export const UserCartComponent = () => {
             })
     },[userId])
     return (
-        <div className={'UserCart'}>
+        <div className={'UserCartContainer'}>
 
             { cart && Object.entries(cart).map(([key,value],index)=>{
                 if(Array.isArray(value)){
