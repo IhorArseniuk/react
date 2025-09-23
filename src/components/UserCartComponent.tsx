@@ -13,22 +13,22 @@ export const UserCartComponent = () => {
             })
     },[userId])
     return (
-        <div className={'UserCart'}>
+        <div className='flex justify-center items-center w-full'>
 
             { cart && Object.entries(cart).map(([key,value],index)=>{
                 if(Array.isArray(value)){
                     return(
-                        <ul key={index}>{key}
+                        <ul className='flex  flex-col bg-gray-400 border-2 border-pink-100 p-4' key={index}>{key}
                             {value.map((value,index)=>{
 
                                  if(typeof value ==='object' && value !== null){
                                     return(
-                                        <ul key={index}>
+                                        <ul className='flex flex-col bg-lime-400 border-4 border-amber-950 p-5' key={index}>
                                             {Object.entries(value).map(([key,value],index)=>{
 
                                                 if(Array.isArray(value) && value!==null){
                                                     return(
-                                                        <ul key={index}>{key}
+                                                        <ul className='flex flex-col border-3 bg-sky-400 border-5 border-fuchsia-500 p-4' key={index}>{key}
                                                             {value.map((value,index)=>{
                                                                 if(typeof value ==='object' && value !== null){
                                                                     return(

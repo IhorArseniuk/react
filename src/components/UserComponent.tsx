@@ -7,7 +7,7 @@ type UserProps={
 }
 export const UserComponent:FC<UserProps> = ({user}) => {
     return (
-        <div>
+        <div className='flex flex-col border-4 bg-violet-300 border-amber-700 gap-5 text-fuchsia-950 p-6' >
             {Object.entries(user).map(([key,value],index)=>{
                 if(index<=10){
                     return (
