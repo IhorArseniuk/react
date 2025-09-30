@@ -8,7 +8,7 @@ export const UsersComponent = () => {
 const [users, setUsers]=useState<UserType[]>([])
     const[query]=useSearchParams({})
    useEffect(()=>{
-       getDummyUsers(query.get('count')|| '10','10')
+       getDummyUsers(query.get('count')|| '0','10')
            .then(res=>{
                setUsers(res.users)
            })
