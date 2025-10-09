@@ -4,3 +4,9 @@ export type CarType  = {
   price: number;
   year: number;
 }
+export type CarPostType  = {
+
+    brand: string;
+    price: number;
+    year: number;
+}
