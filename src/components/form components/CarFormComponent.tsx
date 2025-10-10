@@ -21,19 +21,19 @@ return (
             <div>
         <form  className={'flex gap-2 align-middle justify-center'} onSubmit={handleSubmit(customHandleSubmit)}>
 
-            <label className={'flex flex-col'}><b>brand</b>
-            <input className={' border-2 border-green-700'} type={'text'} {...register('brand')}/>
+            <label className={'flex flex-col'}>
+            <input className={' border-2 border-green-700'} placeholder={'brand'} type={'text'} {...register('brand')}/>
                 {errors.brand && <div>{errors.brand.message}</div>}
             </label>
-            <label className={'flex flex-col'}><b>price</b>
-                <input className={'border-2 border-purple-800'} type={'number'} {...register('price')}/>
+            <label className={'flex flex-col'}>
+                <input className={'border-2 border-purple-800'} placeholder={'price'} type={'number'} {...register('price')}/>
                 {errors.price && <div>{errors.price.message}</div>}
             </label>
-            <label className={'flex flex-col '}><b>year</b>
-            <input className={'border-2 border-amber-300'} type={'number'} {...register('year')}/>
+            <label className={'flex flex-col '}>
+            <input className={'border-2 border-amber-300'} type={'number'} placeholder={'year'} {...register('year')}/>
                 {errors.year && <div>{errors.year.message}</div>}
             </label>
-                <button type={"submit"} className={'border-2 border-amber-700 bg-lime-400 h-10'} disabled={!isValid}>Send</button>
+                <button type={"submit"} className={'focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'} disabled={!isValid}>Send</button>
         </form>
 
             </div>

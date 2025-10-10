@@ -10,7 +10,7 @@ export const CarsComponent = () => {
     useEffect(()=>{
       getCars()
           .then(res=>{setCars(res)})
-},[])
+},[cars])
 
     return (
         <div className={' grid grid-cols-2 gap-2'}>
