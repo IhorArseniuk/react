@@ -14,8 +14,8 @@ import {QuotesPage} from "../pages/QuotesPage.tsx";
 export const routes = createBrowserRouter([
     {path:'/',element:<MainLayout/>, children:[
             {index:true,element:<HomePage/>},
-            {path:'login',element:<AuthLoginPage/>, children:[
-                    {path:'resources',element:<ResourcesCategoryPage/>,children:[
+            {path:'login',element:<AuthLoginPage/>},
+                    {path:'/resources',element:<ResourcesCategoryPage/>,children:[
                             {path:'products',element:<ProductsPage/>},
                             {path:'carts',element:<CartsPage/>},
                             {path:'users',element:<UsersPage/>},
@@ -25,5 +25,5 @@ export const routes = createBrowserRouter([
                             {path:'quotes',element:<QuotesPage/>}
                         ]}
                 ]}
-        ]}
+
 ])

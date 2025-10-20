@@ -1,4 +1,4 @@
-import {MenuComponent} from "../components/MenuComponent.tsx";
+import {MenuComponent} from "../components/menu-components/MenuComponent.tsx";
 
 export const HomePage = () => {
     return (
