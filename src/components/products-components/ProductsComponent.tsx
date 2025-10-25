@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import type {DummyProductType} from "../../models/DummyProductType.ts";
-import { getDummyResource} from "../../service/DummyService.ts";
+import {DummyRefresh, getDummyResource} from "../../service/DummyService.ts";
 import {ProductComponent} from "./ProductComponent.tsx";
 
 
@@ -17,7 +17,16 @@ export const ProductsComponent = () => {
                      setProducts(res.products)
                  }
              })
-    },[])
+            .catch(reason => {
+                console.log(reason)
+                     DummyRefresh()
+                         .then(() =>getDummyResource('products')
+                        .then(res=>{
+                            if(res.products) {
+                                setProducts(res.products)
+                            }
+                        }))
+            })},[])
 console.log(products)
     return (
         <div className="flex flex-col">
