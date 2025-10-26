@@ -27,9 +27,10 @@ export const ProductsComponent = () => {
                             }
                         }))
             })},[])
-console.log(products)
+
     return (
         <div className="flex flex-col">
+            <b>Products</b>
             {products.map((product )=>(<ProductComponent key={product.id}  product={product}/>)) }
         </div>
     );
