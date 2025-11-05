@@ -18,3 +18,7 @@ export const getDummyResource = async <T>(url:string):Promise<T[]>=>{
     return data[key] as T[]
 }
 
+export const getDummyRes= async <T>(url:string):Promise<T>=>{
+    const {data}=await axiosInstance.get<T>(url)
+    return data
+}

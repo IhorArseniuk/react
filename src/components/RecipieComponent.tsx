@@ -1,8 +1,8 @@
-import type {TypeRecipiesDummy} from "../models/TypeRecipiesDummy.ts";
+import type {TypeRecipesDummy} from "../models/TypeRecipesDummy.ts";
 import type {FC} from "react";
 
 type RecipeProps={
-    recipe: TypeRecipiesDummy
+    recipe: TypeRecipesDummy
 }
 export const RecipieComponent:FC<RecipeProps> = ({recipe}) => {
     return (
