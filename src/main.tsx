@@ -4,4 +4,6 @@ import './index.css'
 import {RouterProvider} from "react-router";
 import {routes} from "./routes/Routes.tsx";
 
+
+
 createRoot(document.getElementById('root')!).render(<RouterProvider router={routes}/>)
