@@ -8,9 +8,11 @@ import {DummyHomePage} from "../pages/dummy/DummyHomePage.tsx";
 import {UsersDummyPage} from "../pages/dummy/UsersDummyPage.tsx";
 import {ProductsDummyPage} from "../pages/dummy/ProductsDummyPage.tsx";
 import {PostsDummyPage} from "../pages/dummy/PostsDummyPage.tsx";
+import {MenuComponent} from "../components/MenuComponent.tsx";
 
 export const routes =createBrowserRouter([
-    {path:'/',element:<MainLayout/>, children:[
+    {path:'/',element:<MainLayout/>},
+            {path:'resource', element: <MenuComponent/>, children:[
         {path:'json',element:<JsonHomePage/>,children:[
                 {path:'users',element:<UsersJsonPage/>},
                 {path:'products',element:<ProductsJsonPage/>},
@@ -21,5 +23,6 @@ export const routes =createBrowserRouter([
                     {path:'products',element:<ProductsDummyPage/>},
                     {path:'posts',element:<PostsDummyPage/>},
                 ]}
-        ]}
+                ]}
+
 ])

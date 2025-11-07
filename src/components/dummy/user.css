@@ -1,0 +1,19 @@
+.black{
+    color:black;
+    width: 400px;
+    height: 200px;
+    gap: 10px;
+    display: flex;
+
+    flex-direction: column;
+}
+.light{
+    color:yellow;
+    width: 400px;
+    height: 200px;
+    gap: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+}
