@@ -1,9 +1,9 @@
-import {UsersComponent} from "../../components/dummy/UsersComponent.tsx";
+import {UsersDummyComponent} from "../../components/dummy/UsersDummyComponent.tsx";
 
 export const UsersDummyPage = () => {
     return (
         <>
-        <UsersComponent/>
+        <UsersDummyComponent/>
         </>
     );
 };

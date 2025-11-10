@@ -1,16 +1,16 @@
 .black{
     color:black;
     width: 400px;
-    height: 200px;
+    height: 400px;
     gap: 10px;
     display: flex;
 
     flex-direction: column;
 }
 .light{
-    color:yellow;
+    color:violet;
     width: 400px;
-    height: 200px;
+    height: 400px;
     gap: 10px;
 
     display: flex;

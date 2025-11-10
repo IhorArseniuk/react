@@ -1,5 +1,11 @@
+import {JsonHomeComponent} from "../../components/json/JsonHomeComponent.tsx";
+import {Outlet} from "react-router";
+
 export const JsonHomePage = () => {
-    return (
-        <></>
-    );
+   return(
+       <>
+       <JsonHomeComponent/>
+       <Outlet/>
+       </>
+)
 };

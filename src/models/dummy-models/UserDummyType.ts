@@ -40,7 +40,7 @@ export type Crypto = {
     network: string;
 }
 
-export type  TypeUserDummy = {
+export type  UserDummyType = {
     id: number;
     firstName: string;
     lastName: string;

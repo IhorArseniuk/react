@@ -2,7 +2,7 @@ import {createBrowserRouter} from "react-router";
 import {MainLayout} from "../layouts/MainLayout.tsx";
 import {JsonHomePage} from "../pages/json/JsonHomePage.tsx";
 import {UsersJsonPage} from "../pages/json/UsersJsonPage.tsx";
-import {ProductsJsonPage} from "../pages/json/ProductsJsonPage.tsx";
+import {PhotoJsonPage} from "../pages/json/PhotoJsonPage.tsx";
 import {PostsJsonPage} from "../pages/json/PostsJsonPage.tsx";
 import {DummyHomePage} from "../pages/dummy/DummyHomePage.tsx";
 import {UsersDummyPage} from "../pages/dummy/UsersDummyPage.tsx";
@@ -15,7 +15,7 @@ export const routes =createBrowserRouter([
             {path:'resource', element: <MenuComponent/>, children:[
         {path:'json',element:<JsonHomePage/>,children:[
                 {path:'users',element:<UsersJsonPage/>},
-                {path:'products',element:<ProductsJsonPage/>},
+                {path:'products',element:<PhotoJsonPage/>},
                 {path:'posts',element:<PostsJsonPage/>},
             ]},
             {path:'dummy',element:<DummyHomePage/>,children:[

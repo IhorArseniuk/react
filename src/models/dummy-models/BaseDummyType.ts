@@ -1,4 +1,4 @@
-export type BaseDummytype ={
+export type BaseDummyType ={
 
     skip:number,
     total:number,

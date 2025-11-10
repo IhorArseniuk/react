@@ -1,11 +1,11 @@
-import type {TypeUserDummy} from "../../models/UserDummyType.ts";
+import type {TypeUserDummy} from "../../models/dummy-models/UserDummyType.ts";
 import {type FC, useContext} from "react";
 import {ThemeContext} from "../../contexts/ThemeContext.tsx";
-import './user.css'
+import './dummy.css'
 type UserProps={
     user: TypeUserDummy
 }
-export const UserComponent:FC<UserProps> = ({user}) => {
+export const UserDummyComponent:FC<UserProps> = ({user}) => {
    const {colorTheme}=useContext(ThemeContext)
     return (
         <ul className={colorTheme}>
