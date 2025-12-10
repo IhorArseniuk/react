@@ -4,6 +4,7 @@ import './index.css'
 import {Provider} from "react-redux";
 import {RouterProvider} from "react-router";
 import {routes} from "./routes/Router.tsx";
+import {store} from "./redux/store/ReduxStore.ts";
 
 createRoot(document.getElementById('root')!).render(
 <Provider store={store} >
