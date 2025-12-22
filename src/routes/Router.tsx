@@ -7,9 +7,9 @@ import {ComplexJsonDataPage} from "../pages/ComplexJsonDataPage.tsx";
 
 export const routes = createBrowserRouter([
 {path:'/', element:<HomePage/>, children:[
-        {path:'users',element:<UsersJsonPage/>},
-        {path:'posts', element:<PostsJsonPage/>},
-        {path:'comments', element:<CommentsJsonPage/>},
-        {path:'complex',element:<ComplexJsonDataPage/>}
+        {path: 'posts', element:<PostsJsonPage/>},
+        {path: 'comments', element:<CommentsJsonPage/>},
+        {path: 'users',element:<UsersJsonPage/>},
+        {path: 'complex',element:<ComplexJsonDataPage/>}
     ]}
 ])

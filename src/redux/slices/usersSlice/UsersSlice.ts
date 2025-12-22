@@ -14,11 +14,11 @@ export const usersSlice = createSlice({
      name:'users',
     initialState: initialValue,
     reducers:{},
-    extraReducers: buiider => buiider
+    extraReducers: builder => builder
         .addCase(loadUsers.fulfilled,(state, action:PayloadAction<UserType[]>)=>{
             state.users= action.payload
         })
-        .addCase(loadUsers.rejected, (state, action)=>{
+        .addCase(loadUsers.rejected, (state)=>{
             console.log(state)
         })
 })

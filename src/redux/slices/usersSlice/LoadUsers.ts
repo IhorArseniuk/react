@@ -2,14 +2,14 @@ import {createAsyncThunk} from "@reduxjs/toolkit";
 import {loadJsonUsers} from "../../../axios/axios.ts";
 
 export  const loadUsers = createAsyncThunk(
-    'userSlice/LoadUsers',
+    'usersSlice/LoadUsers',
     async (_, thunkAPI)=> {
         try {
             const users = await loadJsonUsers()
             return thunkAPI.fulfillWithValue(users )
         }
         catch(e){
-            return thunkAPI.rejectWithValue('error')
+            return thunkAPI.rejectWithValue(e )
         }
     }
 )
