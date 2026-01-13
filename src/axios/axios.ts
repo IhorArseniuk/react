@@ -24,3 +24,10 @@ export const loadJsonComments = async () :Promise<CommentType[]>=>{
     console.log(data)
     return data
 }
+export const loadJsonComplex = async () =>{
+    const complex = []
+    complex.push(await loadJsonUsers())
+    complex.push(await loadJsonPosts())
+    complex.push(await loadJsonComments())
+    return complex
+}

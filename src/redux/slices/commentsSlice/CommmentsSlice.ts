@@ -21,3 +21,5 @@ export const commentsSlice= createSlice({
             console.log(action)
         })
 })
+
+export const commentsSliceActions= { ...commentsSlice.actions, loadComments}

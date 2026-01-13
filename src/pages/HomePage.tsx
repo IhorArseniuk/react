@@ -8,6 +8,7 @@ export const HomePage = () => {
             <h1><Link to={'users'}>users</Link></h1>
             <h1><Link to={'posts'}>posts</Link></h1>
             <h1><Link to={'comments'}>comments</Link></h1>
+            <h1><Link to={'complex'}>complex</Link></h1>
             <Outlet/>
         </>
     );

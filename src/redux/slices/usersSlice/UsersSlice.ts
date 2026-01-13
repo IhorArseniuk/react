@@ -23,3 +23,4 @@ export const usersSlice = createSlice({
         })
 })
 
+export const usersSliceActions ={ ...usersSlice.actions, loadUsers}

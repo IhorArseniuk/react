@@ -23,3 +23,5 @@ export const postsSlice = createSlice({
         })
 
 })
+
+export const postsSliceActions= { ...postsSlice.actions, loadPosts}
